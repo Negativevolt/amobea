@@ -1,0 +1,44 @@
+# This .gitignore file should be placed at the root of your Unity project directory
+# Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+# Auto-generated folders
+/Library/
+/Temp/
+/Obj/
+/Build/
+/Builds/
+/Logs/
+/UserSettings/
+
+# IDE & Editor files
+.vs/
+.idea/
+.vscode/
+*.sln
+*.csproj
+*.unityproj
+*.userprefs
+
+# Build outputs
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Compiled native shims (rebuilt automatically by launch script)
+NativeFix/*.so
+NativeFix/openxr_layer/*.so
+NativeFix/vulkan_layer/*.so
+
+# Large data
+/MemoryCaptures/
+/Recordings/
+
+# XR status debug file — written by DesktopPlayer.WriteXRStatus()
+# Guard both the bare name (project root) and any absolute path used as a filename
+xr_status.txt
+*xr_status.txt
+
+# Unity auto-recovery scene backups
+/[Aa]ssets/_Recovery/
+/[Aa]ssets/_Recovery.meta
