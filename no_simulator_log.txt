@@ -1,0 +1,2 @@
+XRI settings: automatic simulator spawn OFF.
+Scene: switched off 'XR Interaction Simulator'.

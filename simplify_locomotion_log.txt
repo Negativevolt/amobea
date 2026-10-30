@@ -1,0 +1,6 @@
+Disabled GameObject: Jump
+Disabled GameObject: Teleportation
+Disabled XR Ray Interactor: Teleport Interactor
+Disabled TeleportationActivator on Rigth Hand.
+CharacterController step offset -> 0.05 m (no climbing).
+Snap Turn OFF, Continuous Turn ON.

@@ -1,0 +1,3 @@
+Added trigger SphereCollider to Left Hand.
+Added trigger SphereCollider to Rigth Hand.
+DesktopPlayer mode = Auto (headset → VR; no headset → WASD+mouse preview).

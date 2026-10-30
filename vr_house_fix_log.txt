@@ -1,0 +1,4 @@
+XROrigin: tracking = Device, CameraYOffset = 1.65 m (predictable standing height).
+Player Body: useModelHands = true.
+Pointer rays disabled on 2 interactors.
+Old hand models hidden: 2.
