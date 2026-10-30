@@ -4,7 +4,7 @@ using UnityEngine;
 /// The player's own body (PSX Casual Male by vinrax). Follows the headset: the body stands under your head and turns
 /// with it, the arms reach for the controllers (two-bone IK), the knees bend when you crouch and the legs step when you
 /// move. The head and the model's hands are hidden (the camera sits in the head; the animated VR hands are shown instead).
-/// In PC test mode the arms just hang.
+/// In PC mode the arms just hang.
 /// </summary>
 [DefaultExecutionOrder(1000)]
 public class PlayerBody : MonoBehaviour

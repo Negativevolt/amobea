@@ -67,7 +67,7 @@ public class PlaytestDriver : MonoBehaviour
         var flow = FindAnyObjectByType<GameFlow>();
         yield return new WaitForSeconds(4f);
         Check(flow != null, "Game Flow exists");
-        Check(PlayerRig.DesktopMode, "PC test mode switched on (no headset)");
+        Check(PlayerRig.DesktopMode, "PC mode switched on (no headset)");
         var torch = FindAnyObjectByType<PSXFlashlight>();
         Check(torch != null && torch.transform.parent != PlayerRig.Head, "torch starts on the table, not in your hand");
         if (torch != null)

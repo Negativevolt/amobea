@@ -2,7 +2,7 @@ using UnityEngine;
 
 /// <summary>
 /// Footsteps the Crawler can hear: every 0.7 m walked makes a quiet noise (heard 3.5 m away),
-/// running makes a loud one (heard 10 m away). Works in VR and in PC test mode.
+/// running makes a loud one (heard 10 m away). Works in VR and in PC mode.
 /// </summary>
 public class PlayerNoise : MonoBehaviour
 {

@@ -12,7 +12,7 @@ using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
 ///   GRIP         grab / use    · TRIGGER  use, or torch on/off while holding it (VRHandGrab)
 ///   A            jump          · B  crouch on/off (slower, quieter; crouching for real works too)
 ///   X            torch on/off  · hold Y  show this card above your left hand
-/// Added automatically to the XR rig whenever a scene loads. PC test mode has its own keys (DesktopPlayer).
+/// Added automatically to the XR rig whenever a scene loads. PC mode has its own keys (DesktopPlayer).
 /// </summary>
 public class VRControls : MonoBehaviour
 {

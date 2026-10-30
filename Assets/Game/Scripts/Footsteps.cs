@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Footstep sounds that match the floor (wood, stone, carpet). Old floorboards creak now and then,
 /// and some boards ALWAYS creak (same spot every time); a creak is loud enough for the Crawler to hear.
-/// Added to the player automatically; works in VR (real walking + smooth move) and in PC test mode.
+/// Added to the player automatically; works in VR (real walking + smooth move) and in PC mode.
 /// </summary>
 public class Footsteps : MonoBehaviour
 {

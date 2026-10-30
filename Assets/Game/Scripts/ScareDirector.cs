@@ -13,7 +13,7 @@ public enum Monster { Watcher, Crawler, Mother, Tentacle }
 ///   FigureCross - it walks across a corridor in the distance.
 ///   Appear      - it just stands somewhere for a moment, staring, then vanishes.
 /// Uses copies of the monster models kept in "Scare Templates" (built by Tools > Horror Game > Build Game).
-/// Controllers rumble in VR; the camera shakes in PC test mode.
+/// Controllers rumble in VR; the camera shakes in PC mode.
 /// </summary>
 public class ScareDirector : MonoBehaviour
 {

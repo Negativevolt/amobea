@@ -1,7 +1,7 @@
 using Unity.XR.CoreUtils;
 using UnityEngine;
 
-/// <summary>Quick access to the player (works in VR and in PC test mode).</summary>
+/// <summary>Quick access to the player (works in VR and in PC mode).</summary>
 public static class PlayerRig
 {
     static XROrigin s_Origin;
@@ -9,7 +9,7 @@ public static class PlayerRig
 
     /// <summary>True while the player stands inside a hiding spot (closet). The Crawler can't find them.</summary>
     public static bool IsHiding;
-    /// <summary>Crouching (PC test mode, C key): quieter footsteps.</summary>
+    /// <summary>Crouching (PC mode, C key): quieter footsteps.</summary>
     public static bool IsCrouching;
 
     /// <summary>True when playing with keyboard and mouse instead of a headset.</summary>

@@ -5,18 +5,18 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 /// <summary>
-/// PC TEST MODE. When no headset is connected (or Mode = Always PC), the VR rig becomes a keyboard-and-mouse
+/// PC MODE, the main way to play. With Mode = Always PC (the default) the VR rig becomes a keyboard-and-mouse
 /// first-person player:
-///   WASD move · Shift run (noisy!) · mouse look · Left click torch on/off · E use / pick up / drop ·
+///   WASD move · Shift run (noisy!) · C crouch · mouse look · Left click torch on/off · E use / pick up / drop ·
 ///   Right click throw · Esc frees the mouse.
-/// The torch lies on the table by the lift: pick it up with E (it stays in your hand). Put on a headset (Mode = Auto) and the normal VR
-/// controls take over again with no changes.
+/// The torch lies on the table by the lift: pick it up with E (it stays in your hand). To play in VR set Mode = Auto
+/// (headset → VR, no headset → PC) or Always VR, and the normal VR controls take over with no changes.
 /// </summary>
 [RequireComponent(typeof(XROrigin))]
 public class DesktopPlayer : MonoBehaviour
 {
     public enum Mode { Auto, AlwaysPC, AlwaysVR }
-    public Mode mode = Mode.Auto;
+    public Mode mode = Mode.AlwaysPC;
     public float walkSpeed = 1.8f, runSpeed = 3.4f, mouseSensitivity = 0.1f, eyeHeight = 1.65f, reach = 3.0f;
     [Tooltip("C toggles crouch: lower eyes, slow and quiet steps.")]
     public float crouchEyeHeight = 1.0f, crouchSpeed = 0.9f;
@@ -35,7 +35,7 @@ public class DesktopPlayer : MonoBehaviour
 
     /// <summary>
     /// Snaps the view in (field of view narrows by <paramref name="degrees"/>) and lets it ease back out over
-    /// <paramref name="seconds"/>: a jump scare's lurch on a monitor (PC test mode only; never in VR).
+    /// <paramref name="seconds"/>: a jump scare's lurch on a monitor (PC mode only; never in VR).
     /// </summary>
     public static void Punch(float degrees, float seconds)
     {
@@ -44,7 +44,7 @@ public class DesktopPlayer : MonoBehaviour
         s_PunchLength = Mathf.Max(0.05f, seconds);
     }
 
-    /// <summary>Shakes the camera (PC test mode only; never in VR, it makes people sick).</summary>
+    /// <summary>Shakes the camera (PC mode only; never in VR, it makes people sick).</summary>
     public static void Shake(float amount, float seconds)
     {
         s_ShakeAmount = amount;
@@ -130,7 +130,7 @@ public class DesktopPlayer : MonoBehaviour
             m_Torch.SetOn(true, false); // already on, so you can spot it glowing on the table
 
         LockMouse(true);
-        Narrator.Hint("PC TEST: WASD move, Shift run, C crouch, mouse look, E use/pick up (grab the torch on the table), Left click torch on/off, Right click throw");
+        Narrator.Hint("WASD move, Shift run, C crouch, mouse look, E use/pick up (grab the torch on the table), Left click torch on/off, Right click throw");
         yield return new WaitForSeconds(9f);
         Narrator.SayOnce("N1_02");
     }

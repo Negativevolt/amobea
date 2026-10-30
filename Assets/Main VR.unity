@@ -105481,7 +105481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7260394b8e15e4bb96ab46dda93f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DesktopPlayer
-  mode: 2
+  mode: 1
   walkSpeed: 1.8
   runSpeed: 3.4
   mouseSensitivity: 0.1

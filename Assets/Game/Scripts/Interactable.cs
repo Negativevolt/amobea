@@ -5,12 +5,12 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 /// <summary>
-/// Something the player can use: press E on it (PC test), or in VR reach for it / point the guide line at it and press
+/// Something the player can use: press E on it (PC), or in VR reach for it / point the guide line at it and press
 /// GRIP or TRIGGER.
 /// </summary>
 public abstract class Interactable : MonoBehaviour
 {
-    [Tooltip("Shown when looking at it (PC test) or pointing a VR hand at it.")]
+    [Tooltip("Shown when looking at it (PC) or pointing a VR hand at it.")]
     public string prompt = "Use";
 
     XRBaseInteractable m_Xr;
